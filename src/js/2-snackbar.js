@@ -1,4 +1,5 @@
 import iziToast from "izitoast"
+import { butterup } from "./butterup"
 const form = document.querySelector(".form")
 const delayInput = document.querySelector("input[name=delay]")
 const fulfilledRadio = document.querySelector("input[value=fulfilled]")

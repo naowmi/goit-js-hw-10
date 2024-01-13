@@ -1,4 +1,4 @@
-var butterup = {
+export const butterup = {
     options:{
         maxToasts: 5, // Max number of toasts that can be on the screen at once
         toastLife: 5000, // How long a toast will stay on the screen before fading away
