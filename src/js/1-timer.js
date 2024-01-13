@@ -1,6 +1,7 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
+import { butterup } from "./butterup"
 let userSelectedDate
 const daysDisplay = document.querySelector("[data-days]")
 const hoursDisplay = document.querySelector("[data-hours]")
