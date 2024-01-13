@@ -1,4 +1,4 @@
-import iziToast from "izitoast";
+import iziToast from "izitoast"
 const form = document.querySelector(".form")
 const delayInput = document.querySelector("input[name=delay]")
 const fulfilledRadio = document.querySelector("input[value=fulfilled]")
