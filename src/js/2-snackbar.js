@@ -19,12 +19,11 @@ form.addEventListener("submit", (event) => {
     });
 
     getPromise.then((delay) => {
-        butterup.toast({
-            title: "Success",
-            type: "success",
-            message: `✅ Fulfilled promise in ${delay}ms`
-        });
-            
+            butterup.toast({
+                title: "Success",
+                type: "success",
+                message: `✅ Fulfilled promise in ${delay}ms`
+            });    
     })
         .catch((delay) => {
             butterup.toast({
