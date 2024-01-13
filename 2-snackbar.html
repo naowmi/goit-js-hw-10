@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    
     <title>Page 3</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/iziToast-df1d4829.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-14625883.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/iziToast-a376275b.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-f90250d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-c18f7b91.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
     </section>
+    <form class="form">
+      <label class="delay">
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset class="field">
+        <legend class="state">State</legend>
+        <label class="state-label">
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label class="state-label">
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit" name="notification">Create notification</button>
+    </form>
+    
+    <script src="./js/iziToast.js"></script>
   </body>
 </html>
