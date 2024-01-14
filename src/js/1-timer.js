@@ -1,7 +1,7 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
-import { butterup } from "./butterup"
+import "izitoast/dist/css/iziToast.min.css";
 let userSelectedDate
 const daysDisplay = document.querySelector("[data-days]")
 const hoursDisplay = document.querySelector("[data-hours]")
@@ -18,11 +18,10 @@ const options = {
     onClose(selectedDates) {
       const selectedDate = selectedDates[0]
         if (selectedDate < new Date()) {
-            butterup.toast({
+            iziToast.error({
             title:'ERROR',
             message:'Please choose a date in the future',
-            type:'error',
-              icon: true, 
+            position: "topRight"
             })
             startButton.disabled = true
         } else {
